@@ -4,6 +4,7 @@
 # e que encontre os números primos neste intervalo.
 
 remainder_zero = 0
+total_primes = 0
 
 # Display initial text messages:
 # Exibir mensagens de texto inicias:
@@ -24,3 +25,11 @@ for i in range(first_number, last_number+1):
             continue
         if (i % j == 0):
             remainder_zero += 1
+
+# Caso o número de restos 0 seja igual a 2, trata-se de um número primo.
+# Escrever esse número primo na tela.
+# E adicionar 1 à variável total_primos
+
+    if remainder_zero == 2:
+        print(i)
+        total_primes += 1
