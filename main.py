@@ -33,8 +33,7 @@ for i in range(first_number, (last_number+1)):
         total_primes += 1
 
 # Zerar a variável resto_zero para que ela possa ser usada novamente pelo laço:
-    resto_zero = 0
+    remainder_zero = 0
 
 # Escrever na tela total de primos encontrado:
 print(f"In total, {total_primes} prime numbers were found.")
-print("")
