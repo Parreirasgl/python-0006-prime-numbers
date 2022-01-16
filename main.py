@@ -10,8 +10,8 @@ total_primes = 0
 # Exibir mensagens de texto inicias:
 print("Write the range in which to search for prime numbers.")
 print("")
-first_number = input("Enter the first number in the interval:")
-last_number = input("Enter the last number:")
+first_number = int(input("Enter the first number in the interval:"))
+last_number = int(input("Enter the last number:"))
 print("")
 print("The prime numbers in this range are:")
 
@@ -28,8 +28,11 @@ for i in range(first_number, last_number+1):
 
 # Caso o número de restos 0 seja igual a 2, trata-se de um número primo.
 # Escrever esse número primo na tela.
-# E adicionar 1 à variável total_primos
-
+# E adicionar 1 à variável total_primos.
     if remainder_zero == 2:
         print(i)
         total_primes += 1
+
+# Zerar a variável resto_zero para que ela possa ser usada novamente pelo laço:
+    resto_zero = 0
+
