@@ -9,14 +9,13 @@ total_primes = 0
 # Display initial text messages:
 # Exibir mensagens de texto inicias:
 print("Write the range in which to search for prime numbers.")
-print("")
-first_number = int(input("Enter the first number in the interval:"))
-last_number = int(input("Enter the last number:"))
+first_number = int(input("Enter the first number in the interval:\n"))
+last_number = int(input("Enter the last number:\n"))
 print("")
 print("The prime numbers in this range are:")
 
 # Criar um laço que vai usar cada um dos valores do intervalo digitado:
-for i in range(first_number, last_number+1):
+for i in range(first_number, (last_number+1)):
 
 # Pegar cada valor do intervalo e dividir pelos números de 1 ao próprio valor.
 # E caso o resto dessa divisão seja 0, adicionar 1 à variável resto_zero:
@@ -36,3 +35,6 @@ for i in range(first_number, last_number+1):
 # Zerar a variável resto_zero para que ela possa ser usada novamente pelo laço:
     resto_zero = 0
 
+# Escrever na tela total de primos encontrado:
+print(f"In total, {total_primes} prime numbers were found.")
+print("")
